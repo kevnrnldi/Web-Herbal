@@ -20,4 +20,9 @@ class UserController extends Controller
 
         return view('index', compact('data'));
     }
+
+    public function dashboard()
+    {
+        return view('dashboard');
+    }
 }

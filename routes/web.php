@@ -14,6 +14,9 @@ use App\Http\Controllers\UserController;
 |
 */
 
-Route::get('index', [UserController::class, 'index']);
 
-Route::resource('produk', ProdukController::class); //megnatur rute resource untuk CRUD yang dicontroller tadi
+
+// Route::resource('produk', ProdukController::class); //megnatur rute resource untuk CRUD yang dicontroller tadi
+Route::get('/user', [UserController::class, 'index']);
+
+Route::get('/', [UserController::class, 'dashboard']);
